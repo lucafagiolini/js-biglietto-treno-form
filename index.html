@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 
 <head>
@@ -33,14 +33,14 @@
 
 
         <div class="container">
-            <div class="text-uppercase">
-                <h1>treni taglia</h1>
+            <div class="text-uppercase my-5 ">
+                <h1 class="text-white">treni taglia</h1>
             </div>
 
-            <div class="d-flex justify-content-center ">
-                <form class="d-flex flex-column ">
-                    <h2 class="text-capitalize">generate your ticket</h2>
-                    <hr>
+            <div class="d-flex justify-content-center flex-column  ">
+                <form id="ticket-generator" class="d-flex flex-column rounded-5 px-3 ">
+                    <h2 class="text-capitalize my-3">generate your ticket</h2>
+                    <hr class="border-3">
                     <div class="d-flex ">
 
 
@@ -54,17 +54,38 @@
                         </div>
 
                     </div>
-                    <hr>
+                    <hr class="border-3">
                     <div class="col-auto p-3">
 
-                        <input class="" id="calc-button" type="button" value="calculate">
+                        <input class="p-2 rounded-2 text-white" id="calc-button" type="button" value="calculate">
                     </div>
                 </form>
 
 
-                <div class="">
-                    <p class="text-capitalize" id="print-name"></p>
-                    <p id="print-price"></p>
+                <div id="result-container" class="rounded-5 my-5 px-3">
+                    <div class="d-flex justify-content-between  ">
+                        <div class="test">
+                            <h2>nome passeggero</h2>
+                            <p class="text-capitalize" id="print-name"></p>
+                        </div>
+                        <div class="test">
+                            <h3>promo</h3>
+                            <p id="print-promo"></p>
+
+                        </div>
+                        <div class="test">
+                            <h3>carrozza</h3>
+                        </div>
+                        <div class="test">
+                            <h3>codice cp</h3>
+                        </div>
+                        <div class="test">
+                            <h3>ticket price</h3>
+                            <p id="print-price"></p>
+
+                        </div>
+
+                    </div>
 
                 </div>
             </div>

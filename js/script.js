@@ -23,6 +23,9 @@ console.log(printPriceElement)
 const printNameElement = document.querySelector("#print-name")
 console.log(printNameElement)
 
+const printPromo = document.querySelector("#print-promo")
+console.log(printPromo)
+
 let basePrice
 
 let FinalPrice
@@ -46,16 +49,19 @@ buttonElement.addEventListener("click",
         if (userAgeElement.value < 18) {
             FinalPrice = basePrice - (basePrice * 0.2)
             console.log(FinalPrice)
+            printPromo.innerHTML = "Under 18 Promo"
         }
 
         else if (userAgeElement.value >= 65) {
             FinalPrice = basePrice - (basePrice * 0.4)
             console.log(FinalPrice)
+            printPromo.innerHTML = "Over 65 Promo"
         }
 
         else {
             FinalPrice = basePrice
             console.log(FinalPrice)
+            printPromo.innerHTML = "Standard"
         }
 
         FinalPrice = FinalPrice.toFixed(2)

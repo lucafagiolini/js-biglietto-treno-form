@@ -1,3 +1,29 @@
 body {
     background-color: rgb(34, 34, 34);
 }
+
+* hr {
+    color: #b11414;
+
+}
+
+#ticket-generator {
+    background-color: white;
+    border: solid 10px;
+    border-color: #b11415;
+}
+
+#result-container {
+    background-color: white;
+    border: solid 10px;
+    border-color: #b11415;
+}
+
+form h2:first-of-type {
+    color: #3b3b3b;
+}
+
+#calc-button {
+    background-color: #b11414;
+    border: none;
+}
