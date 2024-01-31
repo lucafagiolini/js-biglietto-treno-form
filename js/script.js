@@ -1,14 +1,16 @@
 // BIGLIETTO TRENO
 
 // il programma dovrà raccogliere nome cognome dell'utente e km da percorrere
-const NameElement = document.getElementById("user-name")
-console.log(NameElement)
-
-const LastNameElement = document.getElementById("user-lastname")
-console.log(LastNameElement)
-
-const kmNumberElement = document.getElementById("under-age")
+const kmNumberElement = document.getElementById("km-number")
 console.log(kmNumberElement)
+
+const userAgeElement = document.querySelector("#user-age")
+console.log(userAgeElement)
+
+
+const buttonElement = document.getElementById("#calc-button")
+
+
 
 
 
