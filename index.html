@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 
 <head>
     <meta charset="UTF-8">
@@ -27,19 +28,46 @@
 
 <body>
 
-    <main class="">
-        <form>
-            <input id="name" type="text" placeholder="your name">
-            <input id="surname" type="text" placeholder="your surname">
-            <input id="km-number" type="number" placeholder="insert km">
-            <input id="user-age" type="number" placeholder="your age">
-            <input id="calc-button" type="button" value="calculate">
-        </form>
+    <main>
 
 
-        <div class="">
-            <h1 id="print" class="text-white"></h1>
 
+        <div class="container">
+            <div class="text-uppercase">
+                <h1>treni taglia</h1>
+            </div>
+
+            <div class="d-flex justify-content-center ">
+                <form class="d-flex flex-column ">
+                    <h2 class="text-capitalize">generate your ticket</h2>
+                    <hr>
+                    <div class="d-flex ">
+
+
+                        <div class="d-flex flex-column p-3">
+                            <input class="my-2" id="name" type="text" placeholder="your name">
+                            <input id="surname" type="text" placeholder="your surname">
+                        </div>
+                        <div class="d-flex flex-column p-3 ">
+                            <input class="my-2" id="km-number" type="number" placeholder="insert km">
+                            <input id="user-age" type="number" placeholder="your age">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="col-auto p-3">
+
+                        <input class="" id="calc-button" type="button" value="calculate">
+                    </div>
+                </form>
+
+
+                <div class="">
+                    <p class="text-capitalize" id="print-name"></p>
+                    <p id="print-price"></p>
+
+                </div>
+            </div>
         </div>
 
     </main>

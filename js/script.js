@@ -1,6 +1,12 @@
 // BIGLIETTO TRENO
 
 // il programma dovrà raccogliere nome cognome dell'utente e km da percorrere
+const nameElement = document.querySelector("#name")
+console.log(nameElement)
+
+const surnameElement = document.querySelector("#surname")
+console.log(surnameElement)
+
 const kmNumberElement = document.getElementById("km-number")
 console.log(kmNumberElement)
 
@@ -11,17 +17,29 @@ console.log(userAgeElement)
 const buttonElement = document.querySelector("#calc-button")
 console.log(buttonElement)
 
-const printElement = document.querySelector("#print")
-console.log(printElement)
+const printPriceElement = document.querySelector("#print-price")
+console.log(printPriceElement)
 
+const printNameElement = document.querySelector("#print-name")
+console.log(printNameElement)
 
 let basePrice
 
 let FinalPrice
 
+let Name
+
+let Surname
+
 
 buttonElement.addEventListener("click",
     function () {
+        Name = nameElement.value
+        console.log(Name)
+
+        Surname = surnameElement.value
+        console.log(Surname)
+
         basePrice = kmNumberElement.value * 0.21
 
 
@@ -42,8 +60,13 @@ buttonElement.addEventListener("click",
 
         FinalPrice = FinalPrice.toFixed(2)
 
-        printElement.innerHTML = "Your ticket price is: " + FinalPrice + " €"
-        console.log(printElement)
+        printPriceElement.innerHTML = "Your ticket price is: " + FinalPrice + " €"
+        console.log(printPriceElement)
+
+        printNameElement.innerHTML = Name + " " + Surname
+        console.log(printNameElement)
+
+
     }
 )
 
