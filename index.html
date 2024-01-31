@@ -29,6 +29,26 @@
 
     <main class="d-flex flex-column ">
         <h1>Thanks for traveling with us.</h1>
+        <div class="input-group">
+            <span class="input-group-text">ID</span>
+            <input id="user-name" type="text" aria-label="First name" class="form-control"
+                placeholder="Your first name">
+            <input id="user-lastname" type="text" aria-label="Last name" class="form-control"
+                placeholder="Your last name">
+        </div>
+
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">KM</span>
+            <input id="km-number" type="number" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg" placeholder="Km amount">
+        </div>
+
+        <input id="under-age" class="btn btn-primary" type="button" value="Under 18">
+        <input class="btn btn-primary" type="button" value="Over 18">
+        <input class="btn btn-primary" type="button" value="Over 65">
+        <button id="generate" type="button" class="btn btn-outline-danger">GENERATE</button>
+
+
         <button type="button" id="price" class="btn btn-outline-warning col-auto fs-4"></button>
     </main>
 
