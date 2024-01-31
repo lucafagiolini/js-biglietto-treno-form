@@ -8,8 +8,36 @@ const userAgeElement = document.querySelector("#user-age")
 console.log(userAgeElement)
 
 
-const buttonElement = document.getElementById("#calc-button")
+const buttonElement = document.querySelector("#calc-button")
+console.log(buttonElement)
 
+
+let basePrice
+
+let FinalPrice
+
+
+buttonElement.addEventListener("click",
+    function () {
+        basePrice = kmNumberElement.value * 0.21
+
+
+        if (userAgeElement.value < 18) {
+            FinalPrice = basePrice - (basePrice * 0.2)
+            console.log(FinalPrice)
+        }
+
+        else if (userAgeElement.value >= 65) {
+            FinalPrice = basePrice - (basePrice * 0.4)
+            console.log(FinalPrice)
+        }
+
+        else {
+            FinalPrice = basePrice
+            console.log(FinalPrice)
+        }
+    }
+)
 
 
 
