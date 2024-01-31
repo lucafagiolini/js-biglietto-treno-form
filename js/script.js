@@ -11,6 +11,9 @@ console.log(userAgeElement)
 const buttonElement = document.querySelector("#calc-button")
 console.log(buttonElement)
 
+const printElement = document.querySelector("#print")
+console.log(printElement)
+
 
 let basePrice
 
@@ -36,6 +39,11 @@ buttonElement.addEventListener("click",
             FinalPrice = basePrice
             console.log(FinalPrice)
         }
+
+        FinalPrice = FinalPrice.toFixed(2)
+
+        printElement.innerHTML = "Your ticket price is: " + FinalPrice + " €"
+        console.log(printElement)
     }
 )
 
