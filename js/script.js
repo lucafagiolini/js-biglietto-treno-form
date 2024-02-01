@@ -26,6 +26,10 @@ console.log(printNameElement)
 const printPromo = document.querySelector("#print-promo")
 console.log(printPromo)
 
+const printCoachNumber = document.querySelector("#print-coach-number")
+
+const printCpCode = document.querySelector("#print-cp-code")
+
 let basePrice
 
 let FinalPrice
@@ -34,6 +38,7 @@ let Name
 
 let Surname
 
+let coachNumber
 
 buttonElement.addEventListener("click",
     function () {
@@ -49,13 +54,13 @@ buttonElement.addEventListener("click",
         if (userAgeElement.value < 18) {
             FinalPrice = basePrice - (basePrice * 0.2)
             console.log(FinalPrice)
-            printPromo.innerHTML = "Under 18 Promo"
+            printPromo.innerHTML = "Under 18"
         }
 
         else if (userAgeElement.value >= 65) {
             FinalPrice = basePrice - (basePrice * 0.4)
             console.log(FinalPrice)
-            printPromo.innerHTML = "Over 65 Promo"
+            printPromo.innerHTML = "Over 65"
         }
 
         else {
@@ -72,6 +77,13 @@ buttonElement.addEventListener("click",
         printNameElement.innerHTML = Name + " " + Surname
         console.log(printNameElement)
 
+        let coachNumber = Math.floor(Math.random(999999) * 10) + 1
+        console.log(coachNumber)
+        printCoachNumber.innerHTML = coachNumber
+
+        let cpCode = Math.floor(Math.random(999999) * 100000) + 90000
+        console.log(cpCode)
+        printCpCode.innerHTML = cpCode
 
     }
 )
