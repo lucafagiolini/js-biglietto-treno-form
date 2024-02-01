@@ -3,7 +3,7 @@ body {
 }
 
 * hr {
-    color: #b11414;
+    color: #b11415;
 
 }
 
@@ -17,6 +17,11 @@ body {
     background-color: white;
     border: solid 10px;
     border-color: #b11415;
+}
+
+#ticket-box {
+    color: white;
+    background-color: #b11415;
 }
 
 form h2:first-of-type {

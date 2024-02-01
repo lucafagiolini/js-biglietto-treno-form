@@ -13,7 +13,6 @@ console.log(kmNumberElement)
 const userAgeElement = document.querySelector("#user-age")
 console.log(userAgeElement)
 
-
 const buttonElement = document.querySelector("#calc-button")
 console.log(buttonElement)
 
@@ -71,7 +70,7 @@ buttonElement.addEventListener("click",
 
         FinalPrice = FinalPrice.toFixed(2)
 
-        printPriceElement.innerHTML = "Your ticket price is: " + FinalPrice + " €"
+        printPriceElement.innerHTML = FinalPrice + " €"
         console.log(printPriceElement)
 
         printNameElement.innerHTML = Name + " " + Surname
@@ -84,6 +83,8 @@ buttonElement.addEventListener("click",
         let cpCode = Math.floor(Math.random(999999) * 100000) + 90000
         console.log(cpCode)
         printCpCode.innerHTML = cpCode
+
+        document.querySelector("#result-container").style.display = "block"
 
     }
 )

@@ -37,22 +37,25 @@
                 <h1 class="text-white">treni taglia</h1>
             </div>
 
-            <div class="d-flex justify-content-center flex-column  ">
+            <div class="d-flex justify-content-center align-content-center flex-column  ">
                 <form id="ticket-generator" class="d-flex flex-column rounded-5 px-3 ">
                     <h2 class="text-capitalize my-3">generate your ticket</h2>
                     <hr class="border-3">
-                    <div class="d-flex ">
-
-
+                    <div class="d-flex  ">
                         <div class="d-flex flex-column p-3">
-                            <input class="my-2" id="name" type="text" placeholder="your name">
-                            <input id="surname" type="text" placeholder="your surname">
+
+                            <span class="fw-bold">name:</span>
+                            <input class="my-2 p-1" id="name" type="text" placeholder="your name">
+                            <span class="fw-bold">surname:</span>
+                            <input class="my-2 p-1" id="surname" type="text" placeholder="your surname">
+
                         </div>
                         <div class="d-flex flex-column p-3 ">
-                            <input class="my-2" id="km-number" type="number" placeholder="insert km">
-                            <input id="user-age" type="number" placeholder="your age">
+                            <span class="fw-bold">km amount:</span>
+                            <input class="my-2 p-1 " id="km-number" type="number" placeholder="insert km">
+                            <span class="fw-bold">your age:</span>
+                            <input class="my-2 p-1 " id="user-age" type="number" placeholder="your age">
                         </div>
-
                     </div>
                     <hr class="border-3">
                     <div class="col-auto p-3">
@@ -62,28 +65,28 @@
                 </form>
 
 
-                <div id="result-container" class="rounded-5 my-5 px-3">
-                    <div class="d-flex justify-content-between  ">
-                        <div class="test">
-                            <h2>nome passeggero</h2>
+                <div id="result-container" class=" my-5 px-3 " style="display: none;">
+                    <div class="d-flex justify-content-between p-4  ">
+                        <div id="ticket-box" class="p-3 rounded-2">
+                            <h2 class="text-capitalize">nome passeggero</h2>
                             <p class="text-capitalize" id="print-name"></p>
                         </div>
-                        <div class="test">
-                            <h3>promo</h3>
-                            <p id="print-promo"></p>
+                        <div class="p-3 d-flex flex-column justify-content-between  ">
+                            <h3 class="text-capitalize ">promo</h3>
+                            <p class="fw-bolder" id="print-promo"></p>
 
                         </div>
-                        <div class="test">
-                            <h3>carrozza</h3>
-                            <p id="print-coach-number"></p>
+                        <div class=" p-3 ">
+                            <h3 class="text-capitalize ">carrozza</h3>
+                            <p class="fw-bolder" id="print-coach-number"></p>
                         </div>
-                        <div class="test">
-                            <h3>codice cp</h3>
-                            <p id="print-cp-code"></p>
+                        <div class=" p-3 ">
+                            <h3 class="text-capitalize ">codice cp</h3>
+                            <p class="fw-bolder" id="print-cp-code"></p>
                         </div>
-                        <div class="test">
-                            <h3>ticket price</h3>
-                            <p id="print-price"></p>
+                        <div class=" p-3 ">
+                            <h3 class="text-capitalize ">ticket price</h3>
+                            <p class="fw-bolder" id="print-price"></p>
 
                         </div>
 
